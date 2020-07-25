@@ -1,0 +1,27 @@
+{
+  "name": "kubeecms/kcms-url",
+  "type": "wordpress-muplugin",
+  "license": "GNU",
+  "description":
+    "Fixes issues with home and site URL on multisite when using KCMS",
+  "homepage": "https://github.com/kubeecms/kcms-url/",
+  "keywords": ["kubeecms", "kubee", "kcms-url"],
+  "support": {
+    "issues": "https://github.com/kubeecms/kcms-url/issues/",
+    "forum": "https://discourse.kubee.com/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kubeecms\\Kcms\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.1"
+  },
+  "scripts": {
+    "test": ["phpcs --ignore=vendor --extensions=php --standard=PSR2 ."]
+  }
+}
